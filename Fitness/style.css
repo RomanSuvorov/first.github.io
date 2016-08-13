@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	background-color: #ffffff;
+	width: 966px;
+	margin: auto;
+	box-shadow: 0 0 5px #dbdbdb;
+	padding: 51px 48px 60px 46px;
+}
+
+header h2 {
+	font: 38px sans-serif;
+	color: #333333;
+}
+
+.nav {
+	background: url(img/navilight.png);
+	height: 40px;
+	margin: 41px 0 40px 0;
+
+}
+
+.nav li {
+	display: inline-block;
+	
+}
+
+.nav li a {
+	width: 144px;
+	display: inline-block;
+	line-height: 40px;
+	text-decoration: none;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000000;
+	font-size: 13px;
+	font-family: sans-serif;
+}
+
+.nav li a:hover {
+	background-image: url(img/navidark.png);
+	width: 142px;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+}
+
+aside ul {
+	float: left;
+	width: 238px;
+	margin-right: 48px;
+}
+
+aside li {
+	display: block;
+	list-style-type: none;
+	border: 1px solid #c8c8c8;
+	height: 39px;
+	text-align: center;
+	margin-bottom: -1px;
+}
+
+aside li a {
+	display: block;
+	text-decoration: none;
+	color: #656363;
+	height: 39px;
+	line-height: 39px;
+	font-size: 13px;
+	font-family: 'Times New Roman';
+}
+
+aside li:last-child {
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+aside li a:hover {
+	color: #2c2c2c;
+	padding-left: 37px;
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+}
+
+content img {
+	margin-bottom: 40px;
+}
+
+content p {
+	margin: 0 20px 60px 313px;
+	font: 13px sans-serif;
+	color: #2c2c2c;
+}
+
+footer {
+		background-color: #e1e1e1;
+}
+
+footer li {
+	list-style-type: none;
+	display: inline-block;
+	height: 40px;
+}
+
+footer li a, span {
+	width: 144px;
+	height: 40px;
+	display: inline-block;
+	text-decoration: none;
+	color: #2c2c2c;
+	line-height: 40px;
+	font-size: 12px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+footer li a:hover {
+	text-decoration: underline;
+}
+
+footer li:last-child {
+	float: right;
+	padding-right: 45px;
+}
