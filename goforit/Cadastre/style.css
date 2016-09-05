@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'helveticaneuecyrblack';
-    src: url('helveticaneuecyr-black-webfont.eot');
-    src: url('helveticaneuecyr-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaneuecyr-black-webfont.woff2') format('woff2'),
-         url('helveticaneuecyr-black-webfont.woff') format('woff'),
-         url('helveticaneuecyr-black-webfont.ttf') format('truetype');
+    font-family: 'helveticaneuelight';
+    src: url('fonts/helveticaneue_light-webfont.eot');
+    src: url('fonts/helveticaneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneue_light-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue_light-webfont.woff') format('woff'),
+         url('fonts/helveticaneue_light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -16,7 +16,7 @@
 }
 
 body {
-	font-family: "Helvetica Neue";
+	font-family: "helveticaneuelight";
 }
 
 header {
