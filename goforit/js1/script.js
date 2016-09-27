@@ -1,3 +1,6 @@
+/**
+ * Created by Roman on 27.09.2016.
+ */
 'use strict';
 
 var variant = prompt('print "1" if you want come to first program and print "2" if second');
@@ -47,5 +50,6 @@ if(variant == 1) {
         }
     }
 }
+
 
 
