@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON and localStorage</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="script/dest/script.min.js"></script>
+</head>
+<body>
+
+    <script type="text/template" id="template">
+
+        <h1 class="title"><%=title%></h1>
+        <ol>
+            <% for( var i = 0; i < data.length; i++){ %>
+            <li><b><%=data[i].question%></b>
+                <ul>
+                    <% for( var k = 0; k < data[i].answer.length; k++){ %>
+                    <li class="answers">
+                        <label>
+                            <input type="checkbox" value="<%=data[i].value[k]%>">
+                            <span><%=data[i].answer[k]%></span>
+                        </label>
+                    </li>
+                    <% }; %>
+                </ul>
+            </li>
+            <% }; %>
+        </ol>
+
+        <button class="btn_result">Показать результаты теста</button>
+
+        <div class="modal">
+            <p id="modal_text">1</p>
+            <button class="modal_button">Try again!</button>
+        </div>
+
+
+    </script>
+
+</body>
+</html>
