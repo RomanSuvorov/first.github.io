@@ -1,0 +1,47 @@
+header {
+  height: 90px;
+}
+
+.head {
+  float: left;
+  margin: -2px 0px 0px 3px;
+}
+
+.head__logo, .head__title {
+  display: inline-block;
+}
+
+.logo {
+  height: 17px;
+  width: 28px;
+  display: inline-block;
+}
+
+.head__title_main {
+  @include font(("ubuntu_medium", sans-serif), 23pt);
+  margin: 10px 0px -6px -11px;
+}
+
+.head__title_sub {
+  @include font(("ubuntu_light", sans-serif), 11pt);
+  letter-spacing: 0.22em;
+  margin-left: -9px;
+}
+
+.links {
+  float: right;
+  margin: 2.5% 0;
+}
+
+@each $logo_name, $x_offset, $y_offset in (facebook, 0, 0),
+        (twitter, -29px, -20px),
+        (rss, -54px, 0),
+        (linkedin, -85px, 0),
+        (skype, -117px, 0) {
+  .logo__#{$logo_name} {
+    background: url(../../image/dest/grey-head-logo.png) $x_offset $y_offset;
+  }
+  .logo__#{$logo_name}:hover {
+    background: url(../../image/dest/blue_head_logo.png) $x_offset $y_offset;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карусель</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cusel.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.animate-colors.js"></script>
+    <script src="js/jquery.jcarousel-core.min.js"></script>
+    <script src="js/jquery.jcarousel-control.min.js"></script>
+    <script src="js/jquery.jcarousel-pagination.min.js"></script>
+    <script type="text/javascript" src="js/cusel.js"></script>
+    <script type="text/javascript" src="js/jScrollPane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+<!--Menu-->
+
+<div class="menu">
+    <p class="title">Выпадающее меню при помощи JS</p>
+    <ul class="main_ul">
+        <li><a href="#">MainLine1</a></li>
+        <li><a href="#">MainLine2</a>
+            <ul class="sub_ul">
+                <li><a href="#">SubLine1</a></li>
+                <li><a href="#">SubLine2</a>
+                    <ul class="sub2_ul">
+                        <li><a href="#">SubLine2_1</a></li>
+                        <li><a href="#">SubLine2_2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SubLine3</a></li>
+                <li><a href="#">SubLine4</a></li>
+                <li><a href="#">SubLine5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">MainLine3</a></li>
+        <li><a href="#">MainLine4</a></li>
+        <li><a href="#">MainLine5</a></li>
+    </ul>
+</div>
+
+                <!--carousel-->
+
+    <div class="wrap_jcarousel">
+        <div class="jcarousel">
+            <ul>
+                <li><img src="img/owl1.jpg" alt=""></li>
+                <li><img src="img/owl2.jpg" alt=""></li>
+                <li><img src="img/owl3.jpg" alt=""></li>
+                <li><img src="img/owl4.jpg" alt=""></li>
+                <li><img src="img/owl5.jpg" alt=""></li>
+                <li><img src="img/owl6.jpg" alt=""></li>
+            </ul>
+        </div>
+        <a class="jcarousel-prev " href="#"></a>
+        <a class="jcarousel-next" href="#"></a>
+        <div class="jcarousel-pagination"></div>
+    </div>
+
+            <!--Selected-->
+<div class="lineForm">
+    <p class="title">Select при помощи плагина JS</p>
+    <label for="addSelect"></label>
+    <input type="button" value="Выбрать номер совы" id="addSelect">
+</div>
+
+            <!--Checkbox-->
+
+    <div class="js_check">
+        <p class="title">Checkbox при помощи JS</p>
+    <form action="">
+        <div class="labels">
+            <label for="labeljs_1">label 1
+            <span class="niceCheck"><input type="checkbox" id="labeljs_1" checked></span>
+            </label>
+        </div>
+        <div class="labels">
+            <label for="labeljs_2">label 2
+            <span class="niceCheck"><input type="checkbox" id="labeljs_2"></span>
+            </label>
+        </div>
+        <div class="labels">
+            <label for="labeljs_3">label 3
+            <span class="niceCheck"><input type="checkbox" id="labeljs_3"></span>
+            </label>
+        </div>
+    </form>
+    </div>
+
+    <div class="css_check">
+        <p class="title">Checkbox при помощи CSS</p>
+        <form action="">
+            <div class="labels">
+                <input type="checkbox" id="labelcss_1" checked>
+                <label for="labelcss_1">label 1</label>
+            </div>
+            <div class="labels">
+                <input type="checkbox" id="labelcss_2">
+                <label for="labelcss_2">label 2</label>
+            </div>
+            <div class="labels">
+                <input type="checkbox" id="labelcss_3">
+                <label for="labelcss_3">label 3</label>
+            </div>
+        </form>
+    </div>
+
+
+    </body>
+</html>

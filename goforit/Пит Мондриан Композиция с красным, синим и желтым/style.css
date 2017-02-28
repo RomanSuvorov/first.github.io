@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: gray;
+}
+
+table {
+	border-collapse: collapse;
+	border: 5px solid black;
+}
+
+td {
+	border: 5px solid black;
+	width: 24px;
+	height: 24px;
+}
+
+.border {
+	border: none;
+}
+
+.border_r {
+	border-right: 5px solid black;
+}
+
+.border_t {
+	border-top: 5px solid black;
+}
+
+.border_rn {
+	border-right: none;
+}
+
+.border_bn {
+	border-bottom: none;
+}
+
+.white {
+	background-color: #ffffff;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.black {
+	background-color: black;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.red {
+	background-color: red;
+}

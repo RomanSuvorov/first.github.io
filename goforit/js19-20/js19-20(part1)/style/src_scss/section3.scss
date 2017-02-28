@@ -1,0 +1,156 @@
+.section3 {
+  background-color: #f7f7f7;
+  height: 543px;
+}
+
+.articles {
+  width: 50%;
+  float: left;
+}
+
+.article {
+  margin-bottom: 26px;
+}
+
+.articles_title {
+  @include font(("ubuntu_medium", sans-serif), 18pt);
+  color: $dark_grey;
+  margin: 58px 0 44px 0;
+}
+
+.article__img {
+  position: relative;
+  display: inline-block;
+}
+
+.article__img_month,
+.article__img_day {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height:40px;
+  text-align: center;
+  @include font(("ubuntu_medium", sans-serif), 12pt);
+}
+
+.article__img_month {
+  background-color: $blue;
+  top: 12px;
+  left: -17px;
+  color: #ffffff;
+}
+
+.article__img_day {
+  background-color: #f4b60d;
+  top: 52px;
+  left: -17px;
+  color: $dark_grey;
+}
+
+.article__paragraph {
+  width: 66%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+}
+
+.article__paragraph_title {
+  @include font(("ubuntu_medium", sans-serif), 12pt);
+  color: $dark_grey;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.article__paragraph_title:hover {
+  color: $blue;
+}
+
+.article__paragraph_span,
+.article__paragraph_textarea {
+  @include font((Arial, sans-serif), 10pt);
+  color: $dark_grey;
+}
+
+.article__paragraph_span-blue {
+  color: $blue;
+  cursor: pointer;
+}
+
+.article__paragraph_textarea {
+  margin-top: 25px;
+  line-height: 19px;
+}
+
+.accordion {
+  width: 48.4%;
+  float: right;
+}
+
+.accordion__title {
+  @include font(("ubuntu_medium", sans-serif), 18pt);
+  color: $dark_grey;
+  margin: 58px 0 44px 0;
+}
+
+.accordion__item {
+  list-style: none;
+  margin-bottom: 4px;
+
+}
+
+.accordion__btn,
+.accordion__headers {
+  display: inline-block;
+  color: $dark_grey;
+  background-color: $white;
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+
+.accordion__headers{
+  width: 500px;
+  height: 38px;
+  line-height: 38px;
+  @include font(("ubuntu_medium", sans-serif), 10pt);
+  padding-left: 12px;
+}
+
+.accordion__btn{
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.accordion__btn:after {
+  content: '+';
+}
+
+.accordion__paragraph {
+  color: #8a8a8a;
+  @include font((Arial, sans-serif), 10pt);
+  margin: 28px 24px 35px 38px;
+  line-height: 20px;
+  height: 101px;
+  overflow: hidden;
+  display: none;
+}
+
+.accordion__active {
+  .accordion__btn,
+  .accordion__headers {
+    color: $white;
+    background-color: #f4b60d;
+    border: none;
+  }
+
+  .accordion__btn {
+    border-right: 1px solid #f6c53d;
+  }
+
+  .accordion__btn:after {
+    content: '-';
+  }
+
+}
+

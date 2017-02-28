@@ -1,0 +1,59 @@
+
+.section2 {
+  background-color: $dark_grey;
+  padding-bottom: 66px;
+}
+
+.section2__header {
+  color: $white;
+  @include font(("ubuntu_medium", sans-serif), 18pt);
+  display: block;
+  padding:42px 0 52px 0;
+}
+
+@each $title in engineer, truck, factory, pipe {
+  .#{$title}_service {
+    background-image: url('../../image/dest/#{$title}_service.jpg');
+  }
+}
+
+.section2__img {
+  width: 260px;
+  height: 260px;
+  margin: 0 34px 31px 0;
+}
+
+.section2__gallery {
+  text-decoration: none;
+  color: $white;
+  display: inline-block;
+  position: relative;
+}
+
+.section2__gallery:hover {
+  .section2__img:after {
+    position: absolute;
+    content: "+";
+    font-size: 68px;
+    color: white;
+    width: 260px;
+    height: 260px;
+    background: $blue;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 260px;
+  }
+}
+
+.section2__gallery:last-child .section2__img {
+  margin-right:0;
+}
+
+.section2__img-title {
+  @include font(("ubuntu_medium", sans-serif), 12pt);
+  text-align: center;
+}
+
+.section2__gallery:hover {
+  color: #f4b60d;
+}

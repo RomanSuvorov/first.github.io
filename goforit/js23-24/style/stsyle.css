@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(158, 167, 157, 0.46);
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.toDo_list {
+    margin-top: 20%;
+}
+
+.toDo_item {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #5d5a58;
+    color: #f4fff3;
+}
+
+.item_value {
+    margin-top: 10px
+}
+
+span, button {
+    cursor: pointer;
+}

@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    padding: 15px 0 15px 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+body {
+    background-color: greenyellow;
+}
+
+.wrap_jcarousel {
+    width: 300px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    border-radius: 25px;
+}
+
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel-prev,
+.jcarousel-next{
+    position: absolute;
+    top:80px;
+    text-decoration: none;
+    display: block;
+    background-color: #056627;
+    height: 40px;
+    width:40px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 92px 19px rgba(0,0,0,0.74);
+    -moz-box-shadow: 0px 0px 92px 19px rgba(0,0,0,0.74);
+    box-shadow: 0px 0px 92px 19px rgba(0,0,0,0.74);
+}
+
+.jcarousel-prev:hover,
+.jcarousel-next:hover {
+    background-color: #217450;
+}
+
+.jcarousel-prev {
+    left:-80px;
+}
+
+.jcarousel-next {
+    right: -80px;
+}
+
+.jcarousel-pagination {
+    padding-left: 23%;
+    margin-top: 5px;
+}
+
+.jcarousel-pagination a {
+    display: inline-block;
+    text-decoration: none;
+    color: #91050f;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right:5px;
+    background-color: #12a81a;
+    height:20px;
+    width:20px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #004a00;
+}
+
+.jcarousel-pagination a:hover {
+    background-color: #259185;
+}
+
+.lineForm {
+    background-color: #004a00;
+    color: #ff3b84;
+    text-align: center;
+    margin-top:-90px;
+}
+
+#cuselFrame-add-select {
+    width: 170px!important;
+}
+
+                                            /*checkbox*/
+
+.js_check {
+    width:49.8%;
+    float: left;
+    background-color: #12a81a;
+    border: 1px solid #217450;
+}
+
+.css_check {
+    width: 49.8%;
+    float: right;
+    background-color: #12A81A;
+    border: 1px solid #217450;
+}
+
+.labels {
+    text-align: center;
+}
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox-sprite.png);
+    overflow: hidden;
+}
+
+.niceCheck input {
+    display: none;
+}
+
+.css_check input[type=checkbox]{
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.css_check label {
+    cursor: pointer;
+}
+
+.css_check label:after {
+    content: " ";
+    display: inline-block;
+    background: url(../img/checkbox-sprite.png);
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top:3px;
+    left:15px;
+}
+
+.css_check input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+
+
+                                                /*menu*/
+
+.menu {
+    clear: both;
+}
+
+.menu li {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid #88d346;
+    margin-right: -5px;
+    background-color: #c60000;
+    border-radius: 10px;
+}
+
+.main_ul {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.main_ul li a {
+    text-decoration: none;
+    color: #88d346;
+    padding: 10px 85px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.sub_ul, .sub2_ul {
+    display: none;
+    position: absolute;
+    width: 250px;
+}
+
+.sub_ul li, .sub2_ul li {
+    display: block;
+}
+
+.sub_ul li {
+    position: relative;
+    width: 245px;
+}
+
+.sub2_ul {
+    position: absolute;
+    left: 245px;
+    top: 0px;
+    z-index: 2;
+}
+
+
+
+

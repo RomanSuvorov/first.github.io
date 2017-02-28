@@ -1,0 +1,550 @@
+@font-face {
+  font-family: 'ubuntu_medium';
+  src: url("../../fonts/ubuntu-medium/ubuntu-m-webfont.eot");
+  src: url("../../fonts/ubuntu-medium/ubuntu-m-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-medium/ubuntu-m-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-medium/ubuntu-m-webfont.woff") format("woff"), url("../../fonts/ubuntu-medium/ubuntu-m-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu_light';
+  src: url("../../fonts/ubuntu-light/ubuntu-l-webfont.eot");
+  src: url("../../fonts/ubuntu-light/ubuntu-l-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-light/ubuntu-l-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-light/ubuntu-l-webfont.woff") format("woff"), url("../../fonts/ubuntu-light/ubuntu-l-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu_condensed_regular';
+  src: url("../../fonts/ubuntu-C-regular/ubuntu-c-webfont.eot");
+  src: url("../../fonts/ubuntu-C-regular/ubuntu-c-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu-C-regular/ubuntu-c-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-C-regular/ubuntu-c-webfont.woff") format("woff"), url("../../fonts/ubuntu-C-regular/ubuntu-c-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  height: 90px; }
+
+.head {
+  float: left;
+  margin: -2px 0px 0px 3px; }
+
+.head__logo, .head__title {
+  display: inline-block; }
+
+.logo {
+  height: 17px;
+  width: 28px;
+  display: inline-block; }
+
+.head__title_main {
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 23pt;
+  margin: 10px 0px -6px -11px; }
+
+.head__title_sub {
+  font-family: "ubuntu_light", sans-serif;
+  font-size: 11pt;
+  letter-spacing: 0.22em;
+  margin-left: -9px; }
+
+.links {
+  float: right;
+  margin: 2.5% 0; }
+
+.logo__facebook {
+  background: url(../../image/dest/grey-head-logo.png) 0 0; }
+
+.logo__facebook:hover {
+  background: url(../../image/dest/blue_head_logo.png) 0 0; }
+
+.logo__twitter {
+  background: url(../../image/dest/grey-head-logo.png) -29px -20px; }
+
+.logo__twitter:hover {
+  background: url(../../image/dest/blue_head_logo.png) -29px -20px; }
+
+.logo__rss {
+  background: url(../../image/dest/grey-head-logo.png) -54px 0; }
+
+.logo__rss:hover {
+  background: url(../../image/dest/blue_head_logo.png) -54px 0; }
+
+.logo__linkedin {
+  background: url(../../image/dest/grey-head-logo.png) -85px 0; }
+
+.logo__linkedin:hover {
+  background: url(../../image/dest/blue_head_logo.png) -85px 0; }
+
+.logo__skype {
+  background: url(../../image/dest/grey-head-logo.png) -117px 0; }
+
+.logo__skype:hover {
+  background: url(../../image/dest/blue_head_logo.png) -117px 0; }
+
+.nav {
+  background-color: #2a2d32;
+  clear: both;
+  width: 100%;
+  height: 56px;
+  margin-bottom: 40px; }
+
+.nav__search {
+  display: inline-block;
+  float: right; }
+
+.nav__search-logo {
+  top: -28px;
+  right: -213px;
+  position: relative;
+  cursor: pointer; }
+
+.nav__item {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #181a1d;
+  line-height: 56px; }
+
+.nav__link {
+  font-family: "ubuntu_condensed_regular", sans-serif;
+  font-size: 10.5pt;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  height: 56px;
+  width: 115px; }
+
+.nav__item:first-child {
+  background-color: #248cec; }
+
+.nav__link:hover {
+  color: #f4b60d; }
+
+.nav__input-text {
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  outline: none;
+  border: 1px solid #181a1d;
+  height: 39px;
+  width: 93%;
+  margin: 7px 70px 0 0;
+  color: #fff; }
+
+.nav__input-text::-webkit-input-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text::-moz-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text:-moz-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text:-ms-input-placeholder {
+  text-indent: 0;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease; }
+
+.nav__input-text[type="text"] {
+  background-color: #35383c;
+  padding-left: 10px; }
+
+.wrap_jcarousel {
+  margin: 0 auto;
+  position: relative; }
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  height: 470px; }
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.jcarousel li {
+  float: left; }
+
+.jcarousel li img {
+  height: 470px; }
+
+.ins_square {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  top: 17%;
+  left: 17%; }
+
+.jcarousel__creed {
+  position: absolute;
+  z-index: 1000;
+  left: 36px;
+  top: 233px; }
+
+.jcarousel-pagination {
+  position: relative;
+  text-align: center;
+  margin: -32px auto; }
+
+.jcarousel-pagination a {
+  margin: 0 3px 0 10px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  background-color: #fff; }
+
+.section1 {
+  margin: 117px 0 67px 0; }
+  .section1 .section1__block {
+    display: inline-block;
+    width: 380px; }
+    .section1 .section1__block .section1__num {
+      font-family: "ubuntu_medium", sans-serif;
+      font-size: 70pt;
+      position: relative;
+      top: -110px;
+      color: rgba(42, 43, 46, 0.1); }
+    .section1 .section1__block .section1__article {
+      display: inline-block;
+      width: 239px;
+      margin-left: 11px; }
+      .section1 .section1__block .section1__article .section1__paragraph {
+        font-family: Arial, sans-serif;
+        font-size: 10pt;
+        color: #8a8a8a;
+        height: 53px;
+        overflow: hidden;
+        line-height: 19px;
+        display: block;
+        margin: 19px 0 22px 0; }
+      .section1 .section1__block .section1__article .section1__header {
+        font-family: "ubuntu_medium", sans-serif;
+        font-size: 15pt;
+        color: #2a2d32; }
+      .section1 .section1__block .section1__article .section1__img {
+        margin: 0 0 9px 3px; }
+      .section1 .section1__block .section1__article .section1__read-more {
+        font-family: "ubuntu_medium", sans-serif;
+        font-size: 10pt;
+        text-decoration: none;
+        color: #2a2d32; }
+        .section1 .section1__block .section1__article .section1__read-more .section1__read-more_arrow {
+          background: url("../../image/src/arrow_sprites.png") 15px 0;
+          width: 15px;
+          height: 9px;
+          display: inline-block; }
+      .section1 .section1__block .section1__article .section1__read-more:hover {
+        color: #248cec; }
+        .section1 .section1__block .section1__article .section1__read-more:hover .section1__read-more_arrow {
+          background-position: 0 0; }
+
+.section2 {
+  background-color: #2a2d32;
+  padding-bottom: 66px; }
+
+.section2__header {
+  color: #fff;
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 18pt;
+  display: block;
+  padding: 42px 0 52px 0; }
+
+.engineer_service {
+  background-image: url("../../image/dest/engineer_service.jpg"); }
+
+.truck_service {
+  background-image: url("../../image/dest/truck_service.jpg"); }
+
+.factory_service {
+  background-image: url("../../image/dest/factory_service.jpg"); }
+
+.pipe_service {
+  background-image: url("../../image/dest/pipe_service.jpg"); }
+
+.section2__img {
+  width: 260px;
+  height: 260px;
+  margin: 0 34px 31px 0; }
+
+.section2__gallery {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  position: relative; }
+
+.section2__gallery:hover .section2__img:after {
+  position: absolute;
+  content: "+";
+  font-size: 68px;
+  color: white;
+  width: 260px;
+  height: 260px;
+  background: #248cec;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 260px; }
+
+.section2__gallery:last-child .section2__img {
+  margin-right: 0; }
+
+.section2__img-title {
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 12pt;
+  text-align: center; }
+
+.section2__gallery:hover {
+  color: #f4b60d; }
+
+.section3 {
+  background-color: #f7f7f7;
+  height: 543px; }
+
+.articles {
+  width: 50%;
+  float: left; }
+
+.article {
+  margin-bottom: 26px; }
+
+.articles_title {
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 18pt;
+  color: #2a2d32;
+  margin: 58px 0 44px 0; }
+
+.article__img {
+  position: relative;
+  display: inline-block; }
+
+.article__img_month,
+.article__img_day {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 12pt; }
+
+.article__img_month {
+  background-color: #248cec;
+  top: 12px;
+  left: -17px;
+  color: #ffffff; }
+
+.article__img_day {
+  background-color: #f4b60d;
+  top: 52px;
+  left: -17px;
+  color: #2a2d32; }
+
+.article__paragraph {
+  width: 66%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px; }
+
+.article__paragraph_title {
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 12pt;
+  color: #2a2d32;
+  margin-bottom: 7px;
+  cursor: pointer; }
+
+.article__paragraph_title:hover {
+  color: #248cec; }
+
+.article__paragraph_span,
+.article__paragraph_textarea {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  color: #2a2d32; }
+
+.article__paragraph_span-blue {
+  color: #248cec;
+  cursor: pointer; }
+
+.article__paragraph_textarea {
+  margin-top: 25px;
+  line-height: 19px; }
+
+.accordion {
+  width: 48.4%;
+  float: right; }
+
+.accordion__title {
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 18pt;
+  color: #2a2d32;
+  margin: 58px 0 44px 0; }
+
+.accordion__item {
+  list-style: none;
+  margin-bottom: 4px; }
+
+.accordion__btn,
+.accordion__headers {
+  display: inline-block;
+  color: #2a2d32;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  cursor: pointer; }
+
+.accordion__headers {
+  width: 500px;
+  height: 38px;
+  line-height: 38px;
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 10pt;
+  padding-left: 12px; }
+
+.accordion__btn {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center; }
+
+.accordion__btn:after {
+  content: '+'; }
+
+.accordion__paragraph {
+  color: #8a8a8a;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  margin: 28px 24px 35px 38px;
+  line-height: 20px;
+  height: 101px;
+  overflow: hidden;
+  display: none; }
+
+.accordion__active .accordion__btn,
+.accordion__active .accordion__headers {
+  color: #fff;
+  background-color: #f4b60d;
+  border: none; }
+
+.accordion__active .accordion__btn {
+  border-right: 1px solid #f6c53d; }
+
+.accordion__active .accordion__btn:after {
+  content: '-'; }
+
+.brand__num1 {
+  background: url("../../image/src/brand-logo.png") -5px 0; }
+
+.brand__num2 {
+  background: url("../../image/src/brand-logo.png") -203px 0; }
+
+.brand__num3 {
+  background: url("../../image/src/brand-logo.png") -402px 0; }
+
+.brand__num4 {
+  background: url("../../image/src/brand-logo.png") -601px 0; }
+
+.brand__num5 {
+  background: url("../../image/src/brand-logo.png") -800px 0; }
+
+.brand__num6 {
+  background: url("../../image/src/brand-logo.png") -999px 0; }
+
+.brand-box__logo {
+  width: 195px;
+  height: 66px;
+  display: inline-block;
+  margin: 84px 0 87px 0; }
+
+.brand-box__logo:last-child {
+  width: 141px; }
+
+.footer__menu {
+  background-color: #2a2d32;
+  color: #fff; }
+
+.footer__block {
+  display: inline-block;
+  margin: 59px 44px 73px 61px; }
+
+.footer__title {
+  font-family: "ubuntu_medium", sans-serif;
+  font-size: 11pt;
+  margin: 0 142px 37px 0; }
+
+.footer__item {
+  list-style: none;
+  font-family: "Arial", sans-serif;
+  font-size: 10pt;
+  line-height: 34px;
+  cursor: pointer; }
+
+.footer__item:hover {
+  color: #248cec; }
+
+.underline {
+  border-bottom: 1px solid #393c40; }
+
+.footer__contact {
+  background-color: #35383c;
+  color: #fff;
+  height: 60px;
+  font-family: "Arial", sans-serif;
+  font-size: 9pt; }
+
+.footer__contact-logo1 {
+  background: url("../../image/src/footer-logo.png") -77px 0; }
+
+.footer__contact-logo2 {
+  background: url("../../image/src/footer-logo.png") -222px 0; }
+
+.footer__contact-logo3 {
+  background: url("../../image/src/footer-logo.png") -450px 0; }
+
+.footer__contact-logo {
+  width: 28px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.footer__contact-text,
+.footer__contact-logo,
+.footer__contact-item {
+  display: inline-block; }
+
+.footer__contact-item {
+  margin: 23px -27px 0 58px; }
+
+.footer__contact-list {
+  float: left; }
+
+.footer__copyright {
+  float: right;
+  margin: 22px 63px 0 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  width: 90.5%;
+  margin: 0 auto; }

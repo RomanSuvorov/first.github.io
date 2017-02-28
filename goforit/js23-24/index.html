@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVC with RequireJS</title>
+    <link rel="stylesheet" href="style/stsyle.css">
+    <script data-main="src/script.js" src="src/require.js"></script>
+</head>
+<body>
+
+<script type="text/template" id="wrapper-template">
+    <div class="wrapper">
+        <ul class="toDo_list"></ul>
+        <div class="controller">
+            <input type="text" class="item_value">
+            <button class="btn_item-add">Add</button>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="toDo_item-temlate">
+    <% for( var i = 0; i < data.length; i++){ %>
+    <li class="toDo_item">
+        <%=i+1%>. <%= data[i]%>
+        <span data-value="<%= data[i]%>" class="btn_item-edit"> (edit)</span>
+        <span data-value="<%= data[i]%>" class="btn_item-delete"> (delete)</span>
+    </li>
+    <% }; %>
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+.nav {
+  background-color: #2a2d32;
+  clear: both;
+  width: 100%;
+  height: 56px;
+  margin-bottom: 40px;
+}
+
+.nav__search {
+  display: inline-block;
+  float: right;
+}
+
+.nav__search-logo {
+  top: -28px;
+  right: -213px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav__item {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #181a1d;
+  line-height: 56px;
+}
+
+.nav__link {
+  @include font(("ubuntu_condensed_regular", sans-serif), 10.5pt);
+  text-decoration: none;
+  color: $white;
+  display: block;
+  height: 56px;
+  width: 115px;
+}
+
+.nav__item:first-child {
+  background-color: $blue;
+}
+
+.nav__link:hover {
+  color: #f4b60d;
+}
+
+.nav__input-text {
+  @include font((Arial, sans-serif), 9pt);
+  outline: none;
+  border: 1px solid #181a1d;
+  height: 39px;
+  width: 93%;
+  margin: 7px 70px 0 0;
+  color: $white;
+}
+
+.nav__input-text::-webkit-input-placeholder       {text-indent: 0;   transition: text-indent 0.3s ease;}
+.nav__input-text::-moz-placeholder                {text-indent: 0;   transition: text-indent 0.3s ease;}
+.nav__input-text:-moz-placeholder                 {text-indent: 0;   transition: text-indent 0.3s ease;}
+.nav__input-text:-ms-input-placeholder            {text-indent: 0;   transition: text-indent 0.3s ease;}
+.nav__input-text:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.nav__input-text:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.nav__input-text:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.nav__input-text:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+.nav__input-text[type="text"] {
+  background-color: #35383c;
+  padding-left: 10px;
+}

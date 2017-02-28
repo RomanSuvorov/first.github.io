@@ -1,0 +1,92 @@
+@each $num, $x_offset, $y_offset in (num1, -5px, 0),
+        (num2, -203px, 0),
+        (num3,  -402px, 0),
+        (num4,  -601px, 0),
+        (num5, -800px, 0),
+        (num6, -999px, 0){
+  .brand__#{$num} {
+    background: url('../../image/src/brand-logo.png') $x_offset $y_offset;
+  }
+}
+
+.brand-box__logo {
+  width: 195px;
+  height: 66px;
+  display: inline-block;
+  margin: 84px 0 87px 0;
+}
+
+.brand-box__logo:last-child {
+  width:141px;
+}
+
+.footer__menu {
+  background-color: $dark_grey;
+  color: $white;
+}
+
+.footer__block {
+  display: inline-block;
+  margin: 59px 44px 73px 61px;
+}
+
+.footer__title {
+  @include font(("ubuntu_medium", sans-serif), 11pt);
+  margin: 0 142px 37px 0;
+}
+
+.footer__item {
+  list-style: none;
+  @include font(("Arial", sans-serif), 10pt);
+  line-height: 34px;
+  cursor: pointer;
+}
+
+.footer__item:hover {
+  color: $blue;
+}
+
+.underline {
+  border-bottom: 1px solid #393c40;
+}
+
+.footer__contact {
+  background-color: #35383c;
+  color: $white;
+  height: 60px;
+  @include font(("Arial", sans-serif), 9pt);
+}
+
+@each $logo, $x_offset, $y_offset in (logo1, -77px, 0),
+        (logo2, -222px, 0),
+        (logo3,  -450px, 0), {
+  .footer__contact-#{$logo} {
+    background: url('../../image/src/footer-logo.png') $x_offset $y_offset;
+  }
+}
+
+.footer__contact-logo {
+  width: 28px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer__contact-text,
+.footer__contact-logo,
+.footer__contact-item{
+  display: inline-block;
+}
+
+.footer__contact-item {
+  margin: 23px -27px 0 58px;
+}
+
+.footer__contact-list {
+  float: left;
+}
+
+.footer__copyright{
+  float: right;
+  margin: 22px 63px 0 0;
+}

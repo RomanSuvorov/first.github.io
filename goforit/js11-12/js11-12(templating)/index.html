@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyProfile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="../script/tmpl.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+    <script type="text/template" id="myProfile">
+    <div>
+        <h1 class="title"><%=name%></h1>
+        <img src=<%=avatar%> alt=<%=name%>>
+        <p><%= whoIs%></p>
+    </div>
+    <hr>
+    <div>
+        <h2>Хочу учить фронтенд, потому что:</h2>
+        <ul>
+            <% for( var i = 0; i < liContent.length; i++ ){ %>
+            <li><%=liContent[i]%></li>
+            <% }; %>
+        </ul>
+    </div>
+    <div>
+        <h2>Мой контактный телефон:</h2>
+        <p>+38<%= phoneNum%></p>
+    </div>
+    <div>
+        <h2>Мой профиль вконтакте:</h2>
+        <a href=<%=linkHref%> ><%= linkName%></a>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <h2>Мой фидбек:</h2>
+        <p><%= feedback%></p>
+    </div>
+    </script>
+
+
+</body>
+</html>

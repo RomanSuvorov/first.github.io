@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin: 15px 0;
+}
+
+p, ul, a {
+    margin: 15px 0 15px 20px;
+}
+
+p, ul {
+    color: gray;
+}
+
+
+h2 {
+    margin: 15px 0;
+}
+
+img {
+    max-width: 250px;
+    margin-left: 33%;
+}
+

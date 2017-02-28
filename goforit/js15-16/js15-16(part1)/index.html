@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script/jquery-3.1.1.min.js"></script>
+    <script src="script/tmpl.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+<div class="wrapper_search">
+        <ul id="searchTitle">
+            <li class="letter let1">A</li>
+            <li class="letter let2">l</li>
+            <li class="letter let3">t</li>
+            <li class="letter let4">e</li>
+            <li class="letter let5">r</li>
+            <li class="letter let6">G</li>
+            <li class="letter let7">o</li>
+            <li class="letter let8">o</li>
+            <li class="letter let9">g</li>
+            <li class="letter let10">l</li>
+            <li class="letter let11">e</li>
+        </ul>
+        <form>
+            <input type="text" id="text_search" placeholder="Введите текст для поиска">
+            <input type="submit" id="button_search" value="Поиск в AlterGoogle">
+        </form>
+</div>
+        <div class="search_res_wrapper"></div>
+
+        <script type="text/template" id="search_result">
+        <ul>
+            <% for( var i = 0; i < items.length; i++){ %>
+            <li>
+                <div class="box_item">
+                    <a href=<%=items[i].link%> class="title_search"><%=items[i].title%></a>
+                    <p class="link_search"><%=items[i].link%></p>
+                    <p class="snippet_search"><%=items[i].snippet%></p>
+                </div>
+            </li>
+            <% }; %>
+        </ul>
+        </script>
+</body>
+</html>

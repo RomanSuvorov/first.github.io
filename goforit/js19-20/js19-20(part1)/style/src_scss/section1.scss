@@ -1,0 +1,59 @@
+.section1 {
+  margin: 117px 0 67px 0;
+
+  .section1__block {
+    display: inline-block;
+    width: 380px;
+
+    .section1__num {
+      @include font(("ubuntu_medium", sans-serif), 70pt);
+      position: relative;
+      top: -110px;
+      color: rgba(42, 43, 46, 0.1);
+    }
+
+    .section1__article {
+      display: inline-block;
+      width: 239px;
+      margin-left: 11px;
+
+      .section1__paragraph {
+        @include font((Arial, sans-serif), 10pt);
+        color: #8a8a8a;
+        height: 53px;
+        overflow: hidden;
+        line-height: 19px;
+        display: block;
+        margin: 19px 0 22px 0;
+      }
+
+      .section1__header {
+        @include font(("ubuntu_medium", sans-serif), 15pt);
+        color: $dark_grey;
+      }
+
+      .section1__img {
+        margin:0 0 9px 3px;
+      }
+
+      .section1__read-more {
+        @include font(("ubuntu_medium", sans-serif), 10pt);
+        text-decoration: none;
+        color: $dark_grey;
+        .section1__read-more_arrow {
+          background: url("../../image/src/arrow_sprites.png") 15px 0;
+          width: 15px;
+          height: 9px;
+          display: inline-block;
+        }
+      }
+
+      .section1__read-more:hover {
+        color: $blue;
+        .section1__read-more_arrow {
+          background-position: 0 0;
+        }
+      }
+    }
+  }
+}
