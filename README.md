@@ -1,6 +1,6 @@
 `RomanSuvorov.github.io`
 --------------------------
-Here you can view all of my per-projects
+Here you can view all of my pet-projects
 ==============================================
 
    ***This repository contains all the materials that have been learned by me in the learning process.***  
