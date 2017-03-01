@@ -1,24 +1,20 @@
 # RomanSuvorov.github.io
 --------------------------
-
 Here you can view all of my per-projects
 ==============================================
 
    ***В этом хранилище хранятся все материалы, которые были рассмотрены мною в процессе обучения.***
 
-###h3
+You can find me in social networks
 
-####h4
+* #####[vk](https://vk.com/suvorov.roma)
 
-#####h5
+* #####[facebook](https://www.facebook.com/profile.php?id=100004173705485)
 
-[Мой сайт](http://webdesign.ru.net)
+* #####[linkedin](https://www.linkedin.com/in/roman-suvorov-82589b107/)
 
-*H*
+###My e-mail: rouman.suvorov@gmail.com
 
-**H**
-
-***H***
 
 `h`
 
