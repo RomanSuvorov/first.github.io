@@ -1,9 +1,9 @@
-# RomanSuvorov.github.io
+`RomanSuvorov.github.io`
 --------------------------
 Here you can view all of my per-projects
 ==============================================
 
-   ***В этом хранилище хранятся все материалы, которые были рассмотрены мною в процессе обучения.***
+   ***This repository contains all the materials that have been learned by me in the learning process.***  
 
 You can find me in social networks
 
@@ -16,5 +16,4 @@ You can find me in social networks
 ###My e-mail: rouman.suvorov@gmail.com
 
 
-`h`
 
