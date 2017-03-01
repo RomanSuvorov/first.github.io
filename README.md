@@ -1,12 +1,10 @@
 # RomanSuvorov.github.io
+--------------------------
 
 Here you can view all of my per-projects
 ==============================================
 
-
-
-header two
---------
+   ***В этом хранилище хранятся все материалы, которые были рассмотрены мною в процессе обучения.***
 
 ###h3
 
@@ -24,6 +22,3 @@ header two
 
 `h`
 
-    dir /fonts
-    dir /images
-    dir /js
