@@ -1,0 +1,20 @@
+<div class="box__result">
+  <div class="box__result_wrapper">
+    <div class="result__name">{{data.name}}</div>
+    <div class="result__email">{{data.email}}</div>
+    <div class="result__city-country">{{data.city}},{{data.country}}</div>
+
+  <ul class="result__list-socNet">
+    <li class="result__socNet" *ngIf="data.vkontakte"><span class="title-link"> Vkontakte:</span>{{data.vkontakte}}</li>
+    <li class="result__socNet" *ngIf="data.facebook"><span class="title-link"> Facebook:</span>{{data.facebook}}</li>
+    <li class="result__socNet" *ngIf="data.twitter"><span class="title-link"> Twitter:</span>{{data.twitter}}</li>
+    <li class="result__socNet" *ngIf="data.odnoklassniki"><span class="title-link"> Одноклассники:</span>{{data.odnoklassniki}}</li>
+  </ul>
+
+  <img class="result__image" src="{{data.image}}" alt="">
+  </div>
+  <div class="align">
+    <button type="button" class="btn btn-warning btn__result" (click)="doItAgain()">Пройти заново</button>
+  </div>
+</div>
+

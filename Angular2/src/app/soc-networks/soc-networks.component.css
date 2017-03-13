@@ -1,0 +1,36 @@
+.check_page {
+  width: 35%;
+  margin:0 auto;
+}
+
+.check__links {
+  display: block;
+  position: relative;
+}
+
+.check__input-text{
+  position: absolute;
+  left: 35%;
+  width: 60%;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .check__links {
+    font-size:80%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .check_page{
+    width: 40%;
+  }
+  .check__links {
+    font-size:70%;
+  }
+
+  .check__input-text{
+    width: 75%;
+    margin-left: 10%;
+  }
+}

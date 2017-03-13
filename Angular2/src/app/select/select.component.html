@@ -1,0 +1,24 @@
+<p class="title">2. Выберите страну и город</p>
+
+<form #form="ngForm" (submit)="getData(form.value)">
+<div class="form-group">
+  <select [(ngModel)]="formData.country"  class="select input" name="countryData" #chooceCountry="ngModel" (change)="getCities(formData.country)" >
+    <option *ngIf="chooceCountry.untouched || chooceCountry.invalid" value="null" disabled selected>Страна</option>
+    <option *ngFor="let count of countries" [ngValue]="count">{{count.country}}</option>
+  </select>
+
+  <select [(ngModel)]="formData.city"  class="select input" name="cityData" #chooceCity="ngModel">
+    <option *ngIf="chooceCity.untouched || chooceCity.invalid" value="null" disabled selected>Город</option>
+    <option *ngFor="let city of cities" [ngValue]="city">{{city.city}}</option>
+  </select>
+</div>
+
+<div class="mg-bottom"></div>
+
+
+
+<div class="nav__arrow">
+  <button class="prev arrow btn btn-warning" routerLink="/page1">&lt; Предыдущий</button>
+  <button type="submit" class="next arrow btn btn-warning">Следующий &gt; </button>
+</div>
+</form>

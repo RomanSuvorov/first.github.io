@@ -1,0 +1,22 @@
+
+<p class="title">1. Введите имя и e-mail</p>
+
+<form #form="ngForm" (submit)="getData(form.value)">
+  <div class="form-group">
+    <input type="text" name="name" id="name__input" class="form-control" placeholder="Имя" [(ngModel)]="formData.nameVal" required #name="ngModel">
+    <div [hidden]="name.valid || name.untouched" class="alert alr-dn alert-danger">Некорректное имя</div>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" id="email__input" class="form-control" pattern="[a-zA-z0-9]+@[a-zA-Z]+?\.[a-zA-Z]{2,3}" placeholder="email@example.dom" [(ngModel)]="formData.mailVal" required #email="ngModel">
+    <div [hidden]="email.valid || email.untouched" class="alert alr-dn alert-danger ">Некорректный email</div>
+  </div>
+  <div class="mg-bottom"></div>
+
+
+  <div class="nav__arrow">
+    <button  class="arrow prev disabled btn btn-warning">&lt; Предыдущий</button>
+    <button type="submit" class="arrow next btn btn-warning" >Следующий &gt; </button>
+  </div>
+</form>
+
+

@@ -1,0 +1,30 @@
+.box__imagine {
+  width: 60%;
+  margin: 0 auto;
+}
+.box__imagine-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  width: 23%;
+  }
+
+.choose__image:hover {
+  border: 2px solid rgba(255, 189, 42, 0.6);
+}
+
+.result{
+  display: inline-block;
+  background-color: #ff9800;
+}
+
+img {
+  height: auto;
+  margin-right:2%;
+  display: inline-block;
+}
+
+.box__error {
+  color: #ff0000;
+}
+
+

@@ -1,0 +1,46 @@
+<p class="title">4. Выберите любимого котика</p>
+
+<form class="box__imagine" #form="ngForm" (submit)="getResult(form.value)">
+  <div class="box__imagine-wrapper">
+    <label for="#1">
+    <input id="#1" type="radio" name="browser" value="" hidden [value]="'src/app/image/cat1.jpg'" [(ngModel)]="cat1">
+    <img src="src/app/image/cat1.jpg" alt="Cat with really big eyes"
+         class="img-rounded img-responsive choose__image" #cat (click)="validate(true, false)">
+      </label>
+  </div>
+  <div class="box__imagine-wrapper">
+    <label for="#2">
+      <input id="#2" type="radio" name="browser" value="" hidden [value]="'src/app/image/cat2.jpg'" [(ngModel)]="cat2">
+      <img src="src/app/image/cat2.jpg" alt="Very cute kitty"
+           class="img-rounded img-responsive choose__image" #cat (click)="validate(true, false)">
+    </label>
+  </div>
+
+  <div class="box__imagine-wrapper">
+    <label for="#3">
+    <input id="#3" type="radio" name="browser" value="" hidden [value]="'src/app/image/cat3.jpg'" [(ngModel)]="cat3">
+    <img src="src/app/image/cat3.jpg" alt="Cat on grass"
+         class="img-rounded img-responsive choose__image" #cat (click)="validate(true, false)">
+    </label>
+  </div>
+
+  <div class="box__imagine-wrapper">
+    <label for="#4">
+    <input id="#4" type="radio" name="browser" value="" hidden [value]="'src/app/image/dog4.jpg'" [(ngModel)]="dog4">
+    <img src="src/app/image/dog4.jpg" alt="Really? You think that it look like cat?"
+         class="img-rounded img-responsive choose__image" (click)="validate(false, true)">
+      </label>
+  </div>
+
+  <div class="box__error" [hidden]="error">Вы выбрали собачку. А надо котика.</div>
+  <div class="mg-bottom"></div>
+
+  <div class="nav__arrow">
+    <button class="prev arrow btn btn-warning" routerLink="/page3">&lt; Предыдущий</button>
+    <button type="submit" class="btn btn-danger result" [disabled]="disabledFinish">Завершить</button>
+  </div>
+</form>
+
+
+
+

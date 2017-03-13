@@ -1,0 +1,142 @@
+
+
+.box__result{
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  margin-top: 16px;
+}
+
+.box__result_wrapper{
+  padding: 24px 0 24px 24px;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+
+.result__name{
+  font-size: 20px;
+}
+
+.result__email,
+.result__city-country{
+  margin-bottom: 20px;
+}
+
+.result__list-socNet{
+  list-style: none;
+}
+
+.title-link{
+  color: dodgerblue;
+}
+
+.result__image {
+  width: 200px;
+  height: 195px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.align{
+  text-align: center;
+}
+
+
+@media (min-width: 992px) and(max-width: 1199px) {
+
+  .box__result{
+    font-size: 80%;
+  }
+
+  .box__result_wrapper{
+    padding: 15px 0 15px 15px;
+    margin-bottom: 115px;
+  }
+
+  .result__name{
+    font-size: 18px;
+  }
+
+  .result__email,
+  .result__city-country{
+    margin-bottom: 65px;
+  }
+
+  .result__image {
+    width: 140px;
+    height: 130px;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+  .box__result{
+    font-size: 75%;
+  }
+
+  .box__result_wrapper{
+    margin-bottom: 85px;
+  }
+
+  .result__name{
+    font-size: 16px;
+  }
+
+  .result__email,
+  .result__city-country{
+    margin-bottom: 35px;
+  }
+
+  .result__image {
+    width: 125px;
+    height: 110px;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .box__result{
+    font-size: 70%;
+  }
+
+  .box__result_wrapper{
+    margin-bottom: 50px;
+    padding: 5px 0 5px 5px;
+
+  }
+
+  .result__name{
+    font-size: 14px;
+  }
+
+  .result__email,
+  .result__city-country{
+    margin-bottom: 20px;
+  }
+
+  .result__image {
+    width: 80px;
+    height: 75px;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .result__image,
+  .title-link{
+    display: none;
+  }
+}
+
+
+
+

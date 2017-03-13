@@ -1,0 +1,25 @@
+.select_page {
+  width:30%;
+  margin:0 auto;
+}
+
+
+
+.select {
+  width: 80%;
+  height: 40px;
+  font-size: 100%;
+}
+
+.select:last-child{
+  margin-top: 16px;
+}
+
+@media (max-width: 767px){
+
+  .select {
+    height: 25px;
+    font-size: 70%;
+  }
+
+}

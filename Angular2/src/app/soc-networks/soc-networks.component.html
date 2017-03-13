@@ -1,0 +1,34 @@
+<p class="title">3. Отметье социальные сети</p>
+
+<form #form="ngForm" (submit)="getData(form.value)">
+  <div class="check_page">
+    <label for="facebook" class="check__links">
+      <input id="facebook" class="check__input-checkbox" name="facebook" [(ngModel)]="checkFacebook" type="checkbox">Facebook
+      <input type="text" class="check__input-text input" name="facebookText" [(ngModel)]="facebookText" *ngIf="checkFacebook" placeholder="Ваша страница в Facebook">
+    </label>
+
+    <label for="vkontakte" class="check__links">
+      <input id="vkontakte" class="check__input-checkbox" name="vkontakte" [(ngModel)]="checkVkontakte" type="checkbox">Вконтакте
+      <input type="text" class="check__input-text input" name="vkontakteText" [(ngModel)]="vkontakteText" *ngIf="checkVkontakte" placeholder="Ваша страница в Вконтакте">
+    </label>
+
+    <label for="twitter" class="check__links">
+      <input id="twitter" class="check__input-checkbox" name="twitter" [(ngModel)]="checkTwitter" type="checkbox">Twitter
+      <input type="text" class="check__input-text input" name="twitterText" [(ngModel)]="twitterText" *ngIf="checkTwitter" placeholder="Ваша страница в Twitter">
+    </label>
+
+    <label for="odnoklassniki" class="check__links">
+      <input id="odnoklassniki" class="check__input-checkbox" name="odnoklassniki" [(ngModel)]="checkOdnokl" type="checkbox">Одноклассники
+      <input type="text" class="check__input-text input" name="odnoklassnikiText" [(ngModel)]="odnoklassnikiText" *ngIf="checkOdnokl" placeholder="Ваша страница в Одноклассники">
+    </label>
+  </div>
+  <div class="mg-bottom"></div>
+
+  <div class="nav__arrow">
+    <button class="prev arrow btn btn-warning" routerLink="/page2">&lt; Предыдущий</button>
+    <button type="submit" class="next arrow btn btn-warning">Следующий &gt; </button>
+    <button hidden class="small_arrow"><</button>
+    <button type="submit" hidden class="small_arrow">></button>
+  </div>
+</form>
+
