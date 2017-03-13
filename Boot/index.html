@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/sd.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-navbar">
+                <span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand">Логотип</a>
+        </div>
+        <div class="collapse navbar-collapse" id="responsive-navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="">Пункт 1</a></li>
+                <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Пункт 2<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">SubMenu 1</a></li>
+                        <li><a href="">SubMenu 2</a></li>
+                        <li><a href="">SubMenu 3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">SubMenu 4</a></li>
+                    </ul></li>
+                <li><a href="">Пункт 3</a></li>
+                <li><a href="">Пункт 4</a></li>
+            </ul>
+            <form action="" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="E-mail" value="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="password" value="">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-sign-in"></i> Log in
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="img/image1.jpg" alt="">
+            <div class="carousel-caption">
+                <h1>Первый слайд</h1>
+                <p>Описание первого слайда</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/image1.jpg" alt="">
+            <div class="carousel-caption">
+                <h1>Второй слайд</h1>
+                <p>Описание второго слайда</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/image1.jpg" alt="">
+            <div class="carousel-caption">
+                <h1>Третий слайд</h1>
+                <p>Описание третьего слайда</p>
+            </div>
+        </div>
+    </div>
+    <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+<div class="container">
+    <div class="row">
+       <h1>Button</h1>
+
+        <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Simple advantage"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></a>
+        <button type="button" class="btn btn-primary"
+                data-toggle="popover"
+                title="Title window"
+                data-content="content"
+                data-placement="top"
+                data-trigger="hover">
+            <i class="fa fa-refresh fa-spin" aria-hidden="true"></i>
+        </button>
+        <a href="#" class="btn btn-success"><i class="fa fa-cog fa-spin" aria-hidden="true"></i></a>
+        <a href="#" class="btn btn-info"><i class="fa fa-plus-square-o fa-spin" aria-hidden="true"></i></a>
+        <a href="#" class="btn btn-warning"><i class="fa fa-arrows fa-spin" aria-hidden="true"></i></a>
+        <a href="#" class="btn btn-danger"><i class="fa fa-arrow-circle-left fa-spin" aria-hidden="true"></i></a>
+
+        <div class="row">
+            <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-success"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-map-pin" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-magic" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-male" aria-hidden="true"></i></a>
+            </div>
+            <a href="#" class="btn btn-info btn-lg">Button</a>
+            <a href="#" class="btn btn-info">Button</a>
+            <a href="#" class="btn btn-info btn-sm">Button</a>
+            <a href="#" class="btn btn-info btn-xs">Button</a>
+
+            <a href="#" class="btn btn-info btn-block">Button</a>
+            <a href="#" class="btn btn-info btn-block active">Button</a>
+            <a href="#" class="btn btn-info btn-block disabled">Button</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="tabs">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-1" data-toggle="tab"> Tab 1 </a></li>
+            <li><a href="#tab-2" data-toggle="tab"> Tab 2 </a></li>
+            <li><a href="#tab-3" data-toggle="tab"> Tab 3 </a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane active fade in">s, culpa dicta eius facere impedit maiores nihil odit perspiciatis quisquam, repellat saepe sequi sint tempora vero voluptas voluptatum? Incidunt, qui!</div>
+            <div id="tab-2" class="tab-pane fade in">Lorem ipsum dolor sit amet, cons</div>
+            <div id="tab-3" class="tab-pane fade in">rum nulla officia veniam veritatis. Contur dolor dolore ea eligendi illo, sapiente.</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="btn-group drop-down_wrapper dropup">
+                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <button class="btn btn-warning">
+                    Drop-button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#"> Item 1 </a></li>
+                    <li><a href="#"> Item 2 </a></li>
+                    <li><a href="#"> Item 3 </a></li>
+                    <li><a href="#"> Item 4 </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary collapsed">Button</a>
+            <div id="spoiler-1" class="collapse">
+                <div class="well">
+                    <p>Some paragraph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div id="accordion" class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                            <a class="panel-title" href="#spoiler_num-1" data-parent="#accordion" data-toggle="collapse">Open 1 slide</a>
+                    </div>
+                    <div id="spoiler_num-1" class="panel-body panel-collapse collapse in">Content ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent Content</div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <a class="panel-title" href="#spoiler_num-2" data-parent="#accordion" data-toggle="collapse">Open 2 slide</a>
+                    </div>
+                    <div id="spoiler_num-2" class="panel-body panel-collapse collapse">Content ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent Content</div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <a class="panel-title" href="#spoiler_num-3" data-parent="#accordion" data-toggle="collapse">Open 3 slide</a>
+                    </div>
+                    <div id="spoiler_num-3" class="panel-body panel-collapse collapse">Content ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent ContentContent Content</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Open modal window</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">&times</button>
+                <h3 class="modal-title">Modal title</h3>
+            </div>
+            <div class="modal-body">
+                <p>Modal window</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning" type="button" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success"></div>
+            <div class="progress-bar progress-bar-warning"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped active"></div>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+
+</html>
