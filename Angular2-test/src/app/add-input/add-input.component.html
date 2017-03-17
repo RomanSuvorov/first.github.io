@@ -1,0 +1,6 @@
+<div class="input-group">
+  <input type="text" class="form-control" #currentTitle="ngModel" [(ngModel)]="currentItem.title" (keyup.enter)="addItem(currentTitle.value)">
+  <div class="input-group-btn">
+    <button type="button" class="btn btn-primary" (click)="addItem(currentTitle.value)" aria-expanded="false">Add</button>
+  </div>
+</div>

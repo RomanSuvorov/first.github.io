@@ -1,0 +1,19 @@
+.btn, .btn:focus, .btn:active {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  outline: none;
+}
+
+.vert-offset-top-3 {
+  margin-top: 3em;
+}
+
+input.form-control,
+.input-group-btn button {
+  height: 40px;
+}
+
+input.form-control {
+  border-radius: 0;
+}

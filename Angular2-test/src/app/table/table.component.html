@@ -1,0 +1,17 @@
+<div class="block">
+  <table class="table table-bordered" *ngIf="items.length > 0">
+    <thead>
+    <tr>
+      <th colspan="3">Item name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of items; let i = index;">
+      <td>{{e.title}}</td>
+      <td width="15%"><button class="btn btn-block btn-primary" [routerLink]="['/edit', e.id]">Edit</button></td>
+      <td width="15%"><button class="btn btn-block btn-danger" (click)="remove(i)">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="alert alert-info" *ngIf="items.length === 0">List is Empty</div>
+</div>
